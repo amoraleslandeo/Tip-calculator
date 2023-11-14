@@ -102,16 +102,23 @@ body {
                         background-color: #00474b;
                         border-color: #00474b;
                         border-style: solid;
+                        border-width: 2px;
                         color: #fff;
                         font-family: "Space Mono";
                         font-size: 24px;
                         font-weight: 700;
-                        cursor: pointer;
 
                         &:hover {
                             background-color: #9fe8df;
-                            border: 2px solid #9fe8df;
+                            border-color: #9fe8df;
                             color: #00474b;
+                            cursor: pointer;
+                        }
+
+                        &.active {
+                            background-color: #26c2ae;
+                            color: #00474b;
+                            border-color: #26c2ae;
                         }
                     }
                     .custom {
@@ -195,7 +202,7 @@ body {
                 width: 100%;
                 border-radius: 5px;
                 border: none;
-                background-color: #0d686d;
+                background-color: #26c2ae;
                 font-family: "Space Mono";
                 font-weight: 700;
                 text-align: center;

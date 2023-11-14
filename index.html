@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css" type="text/css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/meicon.jpeg">
+  <script src="./js/tip-calculator.js"></script>
+
+  <title>Tip calculator app</title>
+
+</head>
+
+<body>
+  <div class="logo">
+    <img src="./images/logo.svg" alt="logo" />
+  </div>
+  <div class="container">
+    <div class="left_side">
+      <div class="input_1">
+        <span>Bill</span>
+        <div class="input_button">
+          <img src="./images/icon-dollar.svg" alt="icon-dollar" />
+          <input type="number" id="inputOne" name="input" placeholder="0" onclick="setValue('')" />
+        </div>
+      </div>
+      <div class="selector_tip">
+        <span>Select Tip %</span>
+        <div class="tip_items">
+          <input class="item" type="button" value="5%" onclick="setTip(5)" />
+          <input class="item" type="button" value="10%" onclick="setTip(10)" />
+          <input class="item" type="button" value="15%" onclick="setTip(15)" />
+          <input class="item" type="button" value="25%" onclick="setTip(25)" />
+          <input class="item" type="button" value="50%" onclick="setTip(50)" />
+          <input class="custom mostrar" type="button" value="Custom" id="customBtnInput"
+            onClick="javascript:mostrar()" />
+          <input class="ocultar" type="text" value="0" id="customInput" />
+        </div>
+      </div>
+      <div class="input_2">
+        <span>Number of People</span>
+        <div class="input_button">
+          <img src="./images/icon-person.svg" alt="icon-person" />
+          <input type="number" id="inputTwo" name="input" placeholder="0" />
+        </div>
+      </div>
+    </div>
+    <div class="right_side">
+      <div class="result">
+        <div class="result_left_text">
+          <span>Tip Amount</span>
+          <small>/ person</small>
+        </div>
+        <h1 id="tipAmount">$0.00</h1>
+      </div>
+      <div class="result">
+        <div class="result_left_text">
+          <span>Total</span>
+          <small>/ person</small>
+        </div>
+        <h1 id="billTotal">$0.00</h1>
+      </div>
+      <input type="text" id="reset" name="reset" value="RESET" onclick="reset()" />
+    </div>
+  </div>
+</body>
+
+</html>

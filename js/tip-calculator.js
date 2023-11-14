@@ -43,8 +43,6 @@ function setTip(tip, elemento){
     allElements.forEach(item =>{
         item.classList.remove('active')
     })
-
-
     //agregar clase 'active' al boton clicleado
     elemento.classList.add('active')
 }

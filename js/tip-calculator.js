@@ -30,6 +30,7 @@ function ocultarCustomInput() {
 function reset() {
     document.getElementById('inputOne').value = ''
     document.getElementById('inputTwo').value = ''
+    document.getElementById('customInput').value = ''
     document.getElementById('tipAmount').innerText = '$0.00'
     document.getElementById('billTotal').innerText = '$0.00'
     document.getElementById('reset').disabled = true

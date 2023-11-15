@@ -22,31 +22,31 @@
         <span>Bill</span>
         <div class="input_button">
           <img src="./images/icon-dollar.svg" alt="icon-dollar" />
-          <input type="number" id="inputOne" name="input" placeholder="0" onclick="setValue('')" />
+          <input type="number" id="inputOne" name="input" placeholder="0" onclick="remove('inputOne', 'input_1')" />
         </div>
       </div>
       <div class="selector_tip">
         <span>Select Tip %</span>
         <div class="tip_items">
-          <input class="item" type="button" value="5%" onclick="setTip(5, this)" />
-          <input class="item" type="button" value="10%" onclick="setTip(10, this)" />
-          <input class="item" type="button" value="15%" onclick="setTip(15, this)" />
-          <input class="item" type="button" value="25%" onclick="setTip(25, this)" />
-          <input class="item" type="button" value="50%" onclick="setTip(50, this)" />
+          <input class="item" type="button" value="5%" onclick="setTip(5, this);ocultarCustomInput()" />
+          <input class="item" type="button" value="10%" onclick="setTip(10, this);ocultarCustomInput()" />
+          <input class="item" type="button" value="15%" onclick="setTip(15, this);ocultarCustomInput()" />
+          <input class="item" type="button" value="25%" onclick="setTip(25, this);ocultarCustomInput()" />
+          <input class="item" type="button" value="50%" onclick="setTip(50, this);ocultarCustomInput()" />
           <input class="custom mostrar" type="button" value="Custom" id="customBtnInput"
-            onClick="javascript:mostrar()" />
-          <input class="ocultar" type="text" placeholder="0" id="customInput" />
+            onClick="mostrarCustomInput()" />
+          <input class="ocultar" type="number" placeholder="0" id="customInput" onkeyup="setTip(this.value, this)" />
         </div>
       </div>
       <div class="input_2">
         <span>Number of People</span>
         <div class="input_button">
           <img src="./images/icon-person.svg" alt="icon-person" />
-          <input type="number" id="inputTwo" name="input" placeholder="0" />
+          <input type="number" id="inputTwo" name="input" placeholder="0" onclick="remove('inputTwo', 'input_2')" />
         </div>
       </div>
     </div>
-    <div class="right_side">
+    <div class=" right_side">
       <div class="result">
         <div class="result_left_text">
           <span>Tip Amount</span>
